@@ -10,202 +10,193 @@
 
 <style>
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 body{
-  font-family:Arial,sans-serif;
-  background:#f5f7fb;
-  color:#222;
-  line-height:1.6;
+    font-family:Arial,sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
 }
 
 header{
-  background:white;
-  padding:16px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #ddd;
-  position:sticky;
-  top:0;
-  z-index:10;
+    background:white;
+    padding:16px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
 .logo{
-  font-size:22px;
-  font-weight:bold;
-  color:#2563eb;
+    font-size:22px;
+    font-weight:bold;
+    color:#2563eb;
 }
 
 nav a{
-  margin-left:15px;
-  text-decoration:none;
-  color:#333;
+    margin-left:15px;
+    text-decoration:none;
+    color:#333;
 }
 
 .hero{
-  text-align:center;
-  padding:60px 20px;
-  background:#eaf2ff;
+    text-align:center;
+    padding:60px 20px;
+    background:#eaf2ff;
 }
 
 .hero h1{
-  font-size:38px;
-  margin-bottom:12px;
+    font-size:38px;
+    margin-bottom:12px;
 }
 
 .hero p{
-  color:#555;
-  max-width:650px;
-  margin:auto;
+    color:#555;
+    max-width:650px;
+    margin:auto;
 }
 
 .search{
-  max-width:500px;
-  margin:25px auto;
+    max-width:500px;
+    margin:25px auto;
 }
 
 .search input{
-  width:100%;
-  padding:15px;
-  border:1px solid #ccc;
-  border-radius:10px;
-  font-size:16px;
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
 }
 
 .container{
-  max-width:1100px;
-  margin:auto;
-  padding:40px 20px;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
 }
 
 .title{
-  text-align:center;
-  margin-bottom:25px;
+    text-align:center;
+    margin-bottom:25px;
 }
 
 .tools{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .card{
-  background:white;
-  padding:25px;
-  border-radius:14px;
-  border:1px solid #ddd;
-  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    border:1px solid #ddd;
 }
 
 .card h3{
-  margin-bottom:8px;
+    margin-bottom:8px;
 }
 
 .card p{
-  color:#666;
-  font-size:14px;
+    color:#666;
+    font-size:14px;
 }
 
 button{
-  background:#2563eb;
-  color:white;
-  border:0;
-  padding:11px 18px;
-  border-radius:8px;
-  cursor:pointer;
-  margin-top:15px;
-  font-size:15px;
+    background:#2563eb;
+    color:white;
+    border:0;
+    padding:11px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
 }
 
 button:hover{
-  background:#1d4ed8;
-}
-
-.reset{
-  background:#555;
-  margin-left:5px;
+    background:#1d4ed8;
 }
 
 .calculator{
-  max-width:600px;
-  margin:auto;
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  border:1px solid #ddd;
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #ddd;
 }
 
 .calculator h2{
-  text-align:center;
-  margin-bottom:20px;
+    text-align:center;
+    margin-bottom:20px;
 }
 
 label{
-  display:block;
-  font-weight:bold;
-  margin-top:15px;
+    display:block;
+    font-weight:bold;
+    margin-top:15px;
 }
 
 .calculator input{
-  width:100%;
-  padding:12px;
-  margin-top:6px;
-  border:1px solid #ccc;
-  border-radius:7px;
-  font-size:16px;
+    width:100%;
+    padding:12px;
+    margin-top:6px;
+    border:1px solid #ccc;
+    border-radius:7px;
 }
 
 .result{
-  display:none;
-  margin-top:20px;
-  padding:15px;
-  background:#eaf6ff;
-  border-radius:8px;
-  text-align:center;
-  font-weight:bold;
-  color:#155e75;
+    display:none;
+    margin-top:20px;
+    padding:15px;
+    background:#eaf6ff;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
 }
 
 .info{
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  margin-top:30px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-top:30px;
 }
 
 .faq{
-  background:#f5f7fb;
-  padding:15px;
-  margin-top:12px;
-  border-radius:8px;
+    background:#f5f7fb;
+    padding:15px;
+    margin-top:12px;
+    border-radius:8px;
 }
 
 footer{
-  background:#111827;
-  color:white;
-  text-align:center;
-  padding:35px 20px;
-  margin-top:40px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:40px;
 }
 
 footer a{
-  color:white;
-  margin:8px;
-  text-decoration:none;
+    color:white;
+    margin:8px;
+    text-decoration:none;
 }
 
 @media(max-width:700px){
-  .hero h1{
-    font-size:30px;
-  }
+    .hero h1{
+        font-size:30px;
+    }
 
-  nav{
-    display:none;
-  }
+    nav{
+        display:none;
+    }
 }
 </style>
 </head>
@@ -213,438 +204,563 @@ footer a{
 <body>
 
 <header>
-  <div class="logo">StudyTools Hub</div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#tools">Tools</a>
-    <a href="#calculator">Calculator</a>
-    <a href="#about">About</a>
-  </nav>
+<div class="logo">StudyTools Hub</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#tools">Tools</a>
+<a href="#calculator">Calculator</a>
+<a href="#about">About</a>
+</nav>
+
 </header>
+
 
 <section class="hero" id="home">
 
-  <h1>Free Online Student Tools</h1>
+<h1>Free Online Student Tools</h1>
 
-  <p>
-    Calculate percentage, marks, CGPA, age, BMI and EMI quickly and easily.
-  </p>
+<p>
+Calculate percentage, marks, CGPA, age, BMI and EMI quickly and easily.
+</p>
 
-  <div class="search">
-    <input
-      id="search"
-      type="text"
-      placeholder="Search for a tool..."
-      onkeyup="searchTools()"
-    >
-  </div>
+<div class="search">
+<input
+id="search"
+type="text"
+placeholder="Search for a tool..."
+onkeyup="searchTools()">
+</div>
 
 </section>
+
 
 <section class="container" id="tools">
 
-  <h2 class="title">Popular Student Tools</h2>
+<h2 class="title">Popular Student Tools</h2>
 
-  <div class="tools">
+<div class="tools">
 
-    <div class="card tool">
-      <h3>Percentage Calculator</h3>
-      <p>Calculate percentage from obtained and total marks.</p>
-      <button onclick="openTool('percentage')">Open</button>
-    </div>
+<div class="card tool">
+<h3>Percentage Calculator</h3>
+<p>Calculate percentage from obtained and total marks.</p>
+<button onclick="openTool('percentage')">Open</button>
+</div>
 
-    <div class="card tool">
-      <h3>Average Marks</h3>
-      <p>Calculate the average of multiple marks.</p>
-      <button onclick="openTool('average')">Open</button>
-    </div>
+<div class="card tool">
+<h3>Average Marks</h3>
+<p>Calculate the average of multiple marks.</p>
+<button onclick="openTool('average')">Open</button>
+</div>
 
-    <div class="card tool">
-      <h3>CGPA Calculator</h3>
-      <p>Calculate CGPA from semester GPAs.</p>
-      <button onclick="openTool('cgpa')">Open</button>
-    </div>
+<div class="card tool">
+<h3>CGPA Calculator</h3>
+<p>Calculate your CGPA from semester GPAs.</p>
+<button onclick="openTool('cgpa')">Open</button>
+</div>
 
-    <div class="card tool">
-      <h3>Age Calculator</h3>
-      <p>Calculate your current age.</p>
-      <button onclick="openTool('age')">Open</button>
-    </div>
+<div class="card tool">
+<h3>Age Calculator</h3>
+<p>Calculate your current age.</p>
+<button onclick="openTool('age')">Open</button>
+</div>
 
-    <div class="card tool">
-      <h3>BMI Calculator</h3>
-      <p>Calculate BMI using height and weight.</p>
-      <button onclick="openTool('bmi')">Open</button>
-    </div>
+<div class="card tool">
+<h3>BMI Calculator</h3>
+<p>Calculate BMI using height and weight.</p>
+<button onclick="openTool('bmi')">Open</button>
+</div>
 
-    <div class="card tool">
-      <h3>EMI Calculator</h3>
-      <p>Calculate monthly loan EMI.</p>
-      <button onclick="openTool('emi')">Open</button>
-    </div>
+<div class="card tool">
+<h3>EMI Calculator</h3>
+<p>Calculate monthly loan EMI.</p>
+<button onclick="openTool('emi')">Open</button>
+</div>
 
-  </div>
+</div>
 </section>
+
 
 <section class="container" id="calculator">
 
-  <div class="calculator">
+<div class="calculator">
 
-    <h2 id="title">Percentage Calculator</h2>
+<h2 id="title">Percentage Calculator</h2>
 
-    <div id="inputs">
+<div id="inputs">
 
-      <label>Obtained Marks</label>
-      <input
-        id="obtained"
-        type="number"
-        placeholder="Example: 453"
-      >
+<label>Obtained Marks</label>
+<input id="obtained" type="number" placeholder="Example: 453">
 
-      <label>Total Marks</label>
-      <input
-        id="total"
-        type="number"
-        placeholder="Example: 600"
-      >
+<label>Total Marks</label>
+<input id="total" type="number" placeholder="Example: 600">
 
-    </div>
+</div>
 
-    <button onclick="calculate()">Calculate</button>
+<button onclick="calculate()">Calculate</button>
+<button onclick="resetTool()">Reset</button>
 
-    <button class="reset" onclick="resetTool()">Reset</button>
+<div class="result" id="result"></div>
 
-    <div class="result" id="result"></div>
-
-  </div>
+</div>
 
 </section>
+
 
 <section class="container" id="about">
 
-  <div class="info">
+<div class="info">
 
-    <h2>About StudyTools Hub</h2>
+<h2>About StudyTools Hub</h2>
 
-    <p>
-      StudyTools Hub provides free online calculators and useful tools
-      for students and everyday users.
-    </p>
+<p>
+StudyTools Hub provides free online calculators and useful tools
+for students and everyday users.
+</p>
 
-    <br>
+<br>
 
-    <h2>How It Works</h2>
+<h2>How It Works</h2>
 
-    <p>1. Choose a tool.</p>
-    <p>2. Enter your information.</p>
-    <p>3. Click Calculate.</p>
-    <p>4. Get your result instantly.</p>
+<p>1. Choose a tool.</p>
+<p>2. Enter your information.</p>
+<p>3. Click Calculate.</p>
+<p>4. Get your result instantly.</p>
 
-    <br>
+<br>
 
-    <h2>Frequently Asked Questions</h2>
+<h2>Frequently Asked Questions</h2>
 
-    <div class="faq">
-      <strong>Are these calculators free?</strong>
-      <p>Yes, our calculators are free to use.</p>
-    </div>
+<div class="faq">
+<strong>Are these calculators free?</strong>
+<p>Yes, our calculators are free to use.</p>
+</div>
 
-    <div class="faq">
-      <strong>Can I use this website on mobile?</strong>
-      <p>Yes. The website works on mobile and desktop devices.</p>
-    </div>
+<div class="faq">
+<strong>Can I use this website on mobile?</strong>
+<p>Yes. The website works on mobile and desktop devices.</p>
+</div>
 
-    <div class="faq">
-      <strong>Are the results accurate?</strong>
-      <p>The calculators use standard mathematical formulas.</p>
-    </div>
+<div class="faq">
+<strong>Are the results accurate?</strong>
+<p>The calculators use standard mathematical formulas. Always verify important calculations independently.</p>
+</div>
 
-  </div>
+</div>
 
 </section>
 
+
 <footer>
 
-  <p>
-    <a href="#about">About</a>
-    <a href="#">Contact</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms</a>
-    <a href="#">Disclaimer</a>
-  </p>
+<p>
 
-  <br>
+<a href="#about">About</a>
 
-  <p>© 2026 StudyTools Hub</p>
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="#">Contact</a>
+
+<a href="#">Terms</a>
+
+<a href="#">Disclaimer</a>
+
+</p>
+
+<br>
+
+<p>© 2026 StudyTools Hub</p>
 
 </footer>
+
 
 <script>
 
 let currentTool = "percentage";
 
+
 function openTool(tool){
 
-  currentTool = tool;
+currentTool = tool;
 
-  document
-    .getElementById("calculator")
-    .scrollIntoView({behavior:"smooth"});
+document.getElementById("calculator")
+.scrollIntoView({behavior:"smooth"});
 
-  let title = document.getElementById("title");
-  let inputs = document.getElementById("inputs");
+let title = document.getElementById("title");
+let inputs = document.getElementById("inputs");
+let result = document.getElementById("result");
 
-  document.getElementById("result").style.display = "none";
+result.style.display = "none";
 
-  if(tool === "percentage"){
 
-    title.innerText = "Percentage Calculator";
+if(tool === "percentage"){
 
-    inputs.innerHTML = `
-      <label>Obtained Marks</label>
-      <input id="obtained" type="number" placeholder="Example: 453">
+title.innerText = "Percentage Calculator";
 
-      <label>Total Marks</label>
-      <input id="total" type="number" placeholder="Example: 600">
-    `;
-  }
+inputs.innerHTML = `
+<label>Obtained Marks</label>
+<input id="obtained" type="number" placeholder="Example: 453">
 
-  if(tool === "average"){
+<label>Total Marks</label>
+<input id="total" type="number" placeholder="Example: 600">
+`;
 
-    title.innerText = "Average Marks Calculator";
+}
 
-    inputs.innerHTML = `
-      <label>Enter Marks</label>
-      <input id="marks" type="text" placeholder="Example: 70,80,90,85">
-    `;
-  }
 
-  if(tool === "cgpa"){
+else if(tool === "average"){
 
-    title.innerText = "CGPA Calculator";
+title.innerText = "Average Marks Calculator";
 
-    inputs.innerHTML = `
-      <label>Enter Semester GPAs</label>
-      <input id="gpas" type="text" placeholder="Example: 7.5,8,7.8,8.2">
-    `;
-  }
+inputs.innerHTML = `
+<label>Enter Marks</label>
+<input id="marks" type="text" placeholder="Example: 70,80,90,85">
+`;
 
-  if(tool === "age"){
+}
 
-    title.innerText = "Age Calculator";
 
-    inputs.innerHTML = `
-      <label>Date of Birth</label>
-      <input id="dob" type="date">
-    `;
-  }
+else if(tool === "cgpa"){
 
-  if(tool === "bmi"){
+title.innerText = "CGPA Calculator";
 
-    title.innerText = "BMI Calculator";
+inputs.innerHTML = `
+<label>Enter Semester GPAs</label>
+<input id="gpas" type="text" placeholder="Example: 7.5,8,7.8,8.2">
+`;
 
-    inputs.innerHTML = `
-      <label>Weight (kg)</label>
-      <input id="weight" type="number" placeholder="Example: 60">
+}
 
-      <label>Height (cm)</label>
-      <input id="height" type="number" placeholder="Example: 170">
-    `;
-  }
 
-  if(tool === "emi"){
+else if(tool === "age"){
 
-    title.innerText = "EMI Calculator";
+title.innerText = "Age Calculator";
 
-    inputs.innerHTML = `
-      <label>Loan Amount (₹)</label>
-      <input id="loan" type="number" placeholder="Example: 500000">
+inputs.innerHTML = `
+<label>Date of Birth</label>
+<input id="dob" type="date">
+`;
 
-      <label>Annual Interest Rate (%)</label>
-      <input id="interest" type="number" placeholder="Example: 8.5">
+}
 
-      <label>Loan Tenure (Years)</label>
-      <input id="years" type="number" placeholder="Example: 5">
-    `;
-  }
+
+else if(tool === "bmi"){
+
+title.innerText = "BMI Calculator";
+
+inputs.innerHTML = `
+<label>Weight (kg)</label>
+<input id="weight" type="number" placeholder="Example: 60">
+
+<label>Height (cm)</label>
+<input id="height" type="number" placeholder="Example: 170">
+`;
+
+}
+
+
+else if(tool === "emi"){
+
+title.innerText = "EMI Calculator";
+
+inputs.innerHTML = `
+<label>Loan Amount (₹)</label>
+<input id="loan" type="number" placeholder="Example: 500000">
+
+<label>Annual Interest Rate (%)</label>
+<input id="interest" type="number" placeholder="Example: 8.5">
+
+<label>Loan Tenure (Years)</label>
+<input id="years" type="number" placeholder="Example: 5">
+`;
+
+}
+
 }
 
 
 function calculate(){
 
-  let result = document.getElementById("result");
-
-  if(currentTool === "percentage"){
-
-    let obtained = Number(
-      document.getElementById("obtained").value
-    );
-
-    let total = Number(
-      document.getElementById("total").value
-    );
-
-    if(total <= 0 || obtained < 0){
-
-      result.innerText = "Please enter valid marks.";
-
-    }else{
-
-      let percentage = (obtained / total) * 100;
-
-      result.innerText =
-        "Your Percentage: " +
-        percentage.toFixed(2) +
-        "%";
-    }
-  }
+let result = document.getElementById("result");
 
 
-  else if(currentTool === "average"){
+if(currentTool === "percentage"){
 
-    let values =
-      document
-      .getElementById("marks")
-      .value
-      .split(",")
-      .map(Number);
+let obtained = Number(
+document.getElementById("obtained").value
+);
 
-    if(
-      values.length === 0 ||
-      values.some(isNaN)
-    ){
+let total = Number(
+document.getElementById("total").value
+);
 
-      result.innerText =
-        "Please enter valid marks.";
+if(obtained < 0 || total <= 0){
 
-    }else{
+result.innerText = "Please enter valid marks.";
 
-      let sum =
-        values.reduce(
-          (a,b) => a+b,
-          0
-        );
+}else{
 
-      let average =
-        sum / values.length;
+let percentage = (obtained / total) * 100;
 
-      result.innerText =
-        "Average Marks: " +
-        average.toFixed(2);
-    }
-  }
+result.innerText =
+"Your Percentage: " +
+percentage.toFixed(2) +
+"%";
+
+}
+
+}
 
 
-  else if(currentTool === "cgpa"){
+else if(currentTool === "average"){
 
-    let values =
-      document
-      .getElementById("gpas")
-      .value
-      .split(",")
-      .map(Number);
+let text = document.getElementById("marks").value.trim();
 
-    if(
-      values.length === 0 ||
-      values.some(isNaN)
-    ){
+let values = text
+.split(",")
+.map(Number);
 
-      result.innerText =
-        "Please enter valid GPA values.";
+if(
+text === "" ||
+values.some(isNaN)
+){
 
-    }else{
+result.innerText =
+"Please enter valid marks.";
 
-      let sum =
-        values.reduce(
-          (a,b) => a+b,
-          0
-        );
+}else{
 
-      let cgpa =
-        sum / values.length;
+let sum = values.reduce(
+(a,b) => a+b,
+0
+);
 
-      result.innerText =
-        "Your CGPA: " +
-        cgpa.toFixed(2);
-    }
-  }
+let average = sum / values.length;
 
+result.innerText =
+"Average Marks: " +
+average.toFixed(2);
 
-  else if(currentTool === "age"){
+}
 
-    let dob =
-      new Date(
-        document.getElementById("dob").value
-      );
-
-    if(isNaN(dob)){
-
-      result.innerText =
-        "Please select your date of birth.";
-
-    }else{
-
-      let today = new Date();
-
-      let age =
-        today.getFullYear() -
-        dob.getFullYear();
-
-      let month =
-        today.getMonth() -
-        dob.getMonth();
-
-      if(
-        month < 0 ||
-        (
-          month === 0 &&
-          today.getDate() < dob.getDate()
-        )
-      ){
-
-        age--;
-      }
-
-      result.innerText =
-        "Your Age: " +
-        age +
-        " years";
-    }
-  }
+}
 
 
-  else if(currentTool === "bmi"){
+else if(currentTool === "cgpa"){
 
-    let weight =
-      Number(
-        document.getElementById("weight").value
-      );
+let text = document.getElementById("gpas").value.trim();
 
-    let height =
-      Number(
-        document.getElementById("height").value
-      ) / 100;
+let values = text
+.split(",")
+.map(Number);
 
-    if(weight <= 0 || height <= 0){
+if(
+text === "" ||
+values.some(isNaN)
+){
 
-      result.innerText =
-        "Please enter valid values.";
+result.innerText =
+"Please enter valid GPA values.";
 
-    }else{
+}else{
 
-      let bmi =
-        weight / (height * height);
+let sum = values.reduce(
+(a,b) => a+b,
+0
+);
 
-      result.innerText =
-        "Your BMI: " +
-        bmi.toFixed(2);
-    }
-  }
+let cgpa = sum / values.length;
+
+result.innerText =
+"Your CGPA: " +
+cgpa.toFixed(2);
+
+}
+
+}
 
 
-  else if(currentTool === "emi"){
+else if(currentTool === "age"){
 
-    let loan =
-      Number(
+let value =
+document.getElementById("dob").value;
 
+if(!value){
+
+result.innerText =
+"Please select your date of birth.";
+
+}else{
+
+let dob = new Date(value);
+let today = new Date();
+
+let age =
+today.getFullYear() -
+dob.getFullYear();
+
+let month =
+today.getMonth() -
+dob.getMonth();
+
+if(
+month < 0 ||
+(month === 0 &&
+today.getDate() < dob.getDate())
+){
+
+age--;
+
+}
+
+result.innerText =
+"Your Age: " +
+age +
+" years";
+
+}
+
+}
+
+
+else if(currentTool === "bmi"){
+
+let weight =
+Number(document.getElementById("weight").value);
+
+let height =
+Number(document.getElementById("height").value) / 100;
+
+if(weight <= 0 || height <= 0){
+
+result.innerText =
+"Please enter valid values.";
+
+}else{
+
+let bmi =
+weight / (height * height);
+
+result.innerText =
+"Your BMI: " +
+bmi.toFixed(2);
+
+}
+
+}
+
+
+else if(currentTool === "emi"){
+
+let loan =
+Number(document.getElementById("loan").value);
+
+let interest =
+Number(document.getElementById("interest").value);
+
+let years =
+Number(document.getElementById("years").value);
+
+if(loan <= 0 || interest < 0 || years <= 0){
+
+result.innerText =
+"Please enter valid loan details.";
+
+}else{
+
+let monthlyRate =
+interest / 12 / 100;
+
+let months =
+years * 12;
+
+let emi;
+
+if(monthlyRate === 0){
+
+emi = loan / months;
+
+}else{
+
+emi =
+loan *
+monthlyRate *
+Math.pow(1 + monthlyRate, months)
+/
+(
+Math.pow(1 + monthlyRate, months) - 1
+);
+
+}
+
+result.innerText =
+"Monthly EMI: ₹" +
+emi.toFixed(2);
+
+}
+
+}
+
+
+result.style.display = "block";
+
+}
+
+
+function resetTool(){
+
+currentTool = "percentage";
+
+document.getElementById("title")
+.innerText =
+"Percentage Calculator";
+
+document.getElementById("inputs")
+.innerHTML = `
+<label>Obtained Marks</label>
+<input id="obtained" type="number" placeholder="Example: 453">
+
+<label>Total Marks</label>
+<input id="total" type="number" placeholder="Example: 600">
+`;
+
+document.getElementById("result")
+.style.display = "none";
+
+}
+
+
+function searchTools(){
+
+let query =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+let tools =
+document.querySelectorAll(".tool");
+
+tools.forEach(function(tool){
+
+let text =
+tool.innerText.toLowerCase();
+
+if(text.includes(query)){
+
+tool.style.display = "block";
+
+}else{
+
+tool.style.display = "none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+  </html>      
